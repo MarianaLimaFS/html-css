@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* html = id; css = #
+    html= class; css = . */
+    
+    @font-face {
+        font-family:'Watermint';
+        src:url('WatermintScript_PERSONAL_USE_ONLY.otf'), format(otf);
+    }
+body{
+    background-color: rgba(255, 244, 255, 0.719);
+}
+main{
+    background-color: rgb(241, 218, 241);
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 9px 9px 9px pink;
+}
+div{
+    background-color: rgb(195, 140, 226);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+}
+div > p {
+    display: none;
+}
+div:hover > p{
+    background-color: aquamarine;
+    display: block;
+    height: 50px;
+}
+h1{
+   color: rgb(1, 143, 72); 
+   font-family: 'Watermint', 'Times', serif;
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(3, 148, 75);
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Watermint', 'Times', serif;
+}
+.basico{
+    background-color: tan;
+}
+.medio{
+    background-color: salmon;
+}
+.avc{
+    background-color: coral;
+}
+
+p{
+    text-indent: 20px;
+    font-family: 'Watermint', 'Times', serif;
+}

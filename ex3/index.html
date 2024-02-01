@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Martz90-Hex-Html-5.ico" type="image/x-icon">
+    <title>Mudando favicon do site e utilizando escrita em negrito e itálico de forma semântica.</title>
+</head>
+<body>
+    <h1>O que é um favicon?</h1>
+    <p>Favicon, é o ícone que aparece no canto da aba do site que está sendo acessado. Para fazer o favicon, o melhor formato a ser usado é o .ico</p>
+    <p>Bons sites para achar ou fazer seu favicon: 
+        <ul>Favicon Archive</ul>
+        <ul>Favicon.io</ul>
+        <ul>Favicon.cc</ul>
+    </p>
+    <p>Para mudar o favicon vamos na área de configurações, área de tag &lt;head&gt; e acima da tag &lt;title&gt; digitamos 'link:favicon' e na área href"", entre as aspas, apertamos 'ctrl + espaço' e escolhemos o arquivo de ícone presente na pasta.</p>
+    <h1>Usando negrito e itálico</h1>
+    <p>Na forma semântica, para deixarmos algo em negrito, usamos a tag &lt;strong&gt; <strong> ficando dessa forma</strong></p>
+    <p>Para itálico usamos a tag &lt;i&gt; <i>e a frase deseja se torna itálica</i></p>
+    <p>Uma dica para colocar a frase dentro das tags, caso precise, de foma mais rapida, é só selecionar o que desejar, <i>teclar 'ctrl+shift+p', escolher a opção 'envelope with abbreviation, dar enter e digitar a tag desejada.</i> </p>
+    <h1>Vamos aproveitar para aprender mais alguns comandos.</h1> 
+    <h2>Uso de marca texto </h2>
+    <p><mark style="background-color: darkgray;">Para isso, vamos usar a tag mark</mark>.</p>
+    <h2>Texto deletado</h2>
+    <p><del>Podemos marcar um texto como excluído para que ele seja lido mas não considerado</del></p>
+    <h2>Texto inserido</h2>
+    <p><ins>Para que o texto inserido seja lido com maior ênfase</ins></p>
+    <h2>Texto subscrito e sobrescrito</h2>
+    <p>Usamos as tags sup e sub</p>
+    <p>H<sub>2</sub>O e X<sup>20</sup>+3</p>
+    <h2>Código fonte</h2>
+    <p>O comando do <code>document.getElementById('teste)</code> é escrito em linguagem JavaScript. A tag usada nessa escrita é a &lt;code&gt;. No entanto essa tag não organiza por identação, para que isso seja feito é necessário envelopar a tag code em uma tag pre</p>
+    <p><pre>
+        <code>
+            Print ('digite algo')
+                if algo = letra
+                     print('letra')
+                else:
+                     print('numero')
+        </code>
+    </pre>
+    </p>
+    <h2>Citações simples</h2>
+    <p>Como diria x: <q>qualquer coisa</q> Usamos a tag p para indicar citação.</p>
+    <h2>Citações completas</h2>
+    <p>Segund XYZ, em seu livro aBc: <blockquote cite="endereço da citação">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda autem quis maiores tempore reprehenderit, modi minima asperiores qui cumque dolorem quae at eum doloribus rem eligendi laboriosam earum incidunt veniam.</blockquote></p>
+    <p>Usando essa tag blackquote ela será deslocada.</p>
+    <h2>Abreviações</h2>
+    <p>Estudo de <abbr title="HyperText Markup Language">html</abbr> e <abbr title="Cascate Style Sheets">css</abbr></p>
+</body>
+</html>

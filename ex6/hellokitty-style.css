@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to bottom, rgb(250, 230, 235), rgb(252, 183, 194), rgb(248, 154, 170));
+    background-attachment: fixed;
+}
+h1{
+    color: rgb(182, 0, 55);
+    font-size: 50px;
+    font-family: cursive;
+    text-align: justify;
+}
+h2{
+    color: rgb(255, 44, 125);
+    font-size: 30px;
+    font-family: cursive;
+    text-align: justify;
+}
+p{
+    color: rgb(85, 0, 21);
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+}

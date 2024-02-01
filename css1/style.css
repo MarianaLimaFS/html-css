@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{ 
+    font-family: Arial, Helvetica, sans-serif; 
+    /*height 100%*/ /* asterisco+chave cria uma configuração global*/ /*web safe font combinations, para achar combinações de fonte*/
+}
+/*@font-face para colocar fontes baixadas. font family: nome da fonte e src url: arquivo da fonte*/
+@font-face {
+    font-family: 'SourceCodePro' ;
+    src: url('SourceCodePro-VariableFont_wght.ttf') format(ttf), url('SourceCodePro-Italic-VariableFont_wght.ttf'); /*format() 
+    (otf) opentype; (ttf) truetype; (embededd-opentype; truetype-aat */
+}
+body{
+    background-image: linear-gradient(to right, rgb(207, 207, 137), rgb(233, 187, 87), rgb(219, 144, 31));
+
+}
+main{
+    background-color: rgb(255, 255, 229);
+    width: 600px; /*largura*/
+    padding: 15px; /*'acolchoar*/
+    margin: auto; 
+    border-radius: 12px; /*deixar as bordas arredondadas*/
+    box-shadow: 9px 9px 9px orangered; /*fazer sombra*/
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+h1{
+    color: rgb(187, 63, 18);
+    text-align: center;
+    font-family: 'SourceCodePro', 'Times', serif;
+    
+}
+h2{
+    color: rgb(255, 79, 15);
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'SourceCodePro', 'Times', serif;
+}
+p{
+    text-align: justify;
+    font-family: 'SourceCodePro', 'Times', serif;
+    text-indent: 20px; /*dar parágrafo*/
+}
+/*shorthand font
+font-style -> font weight -> font size -> font family 
+
+ao invés de usar varias linhas podemos:
+font: italic bold 20px sans-serif;
+*/

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title> Imagens, áudios e vídeos</title>
+    <link rel="stylesheet" href="hellokitty-style.css">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Selecionei três imagens de diferentes Hello Kitty e diferentes tamanhos (P, M e G) para exemplificar o uso de imagens dinâmicas, ou seja, que se adptam sozinhas</p>
+    <picture> <!-- para inserir a dinamicidade, usa tag picture e dentro dela as tags source:media:type devem ser postas sempre acima, seguindo a ordem menor pro maior, mais fácil usando max-width e sempre colocando o tamanho maximo da imagem maior (max 700px - abre a pequena, max 1160 abre a média, a grande é só indicar na tag img (base é a imagem padrao))-->
+        <source media="(max-width:700px )" srcset="imagens/hellokitty-pq.png" type="image/png">
+        <source media="(max-width:1160px )" srcset="imagens/hellokitty-m.png" type="image/png">
+        <img src="imagens/hellokitty-grande.png" alt="hello-kitty-grande">
+    </picture>
+    <h1>Colocando áudio no site</h1> <!--ter cuidado c direitos autorais-->
+    <audio src="mídia/avrilhellokitty.mp3" controls  ></audio> <!-- nem todos os navegadores são compativeis com esse formato, nesse caso podemos usar o código:
+    <audio>
+        <source src="mídia/avrilhellokitty.mp3" type="audio/mpeg">
+        <source src="mídia/avrilhellokitty.wav" type="audio/wav">
+    </audio> onde tiramos o src automatico da tag audio e inserimos vários source src"#" type"#" para dar opçao do navegador tocar os diferentes tipos de arquivo
+    -->
+    <h1>Colocando vídeos</h1> 
+    <h2>Inserindo vídeo hospedado no meu próprio servidor</h2>
+    <video src="mídia/Hello Kitty and Friends.mp4" width="500"  poster="imagens/thumbvideo.png" controls></video> <!--para colocar mais tipos de formatos, fazer da mesma forma que no áudio-->
+    <h2>Inserindo vídeo de hospedagem externa</h2>
+    <p>Usando vídeo do Youtube como exemplo</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/H3FahBuHUag?si=SFwGgG_hcQAL0AGv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--acessar o vídeo, clicar em compartilhar, incorpora e copiar o código-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e âncoras</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Acesse meu <a href="https://github.com/MarianaLimaFS" target="_blank" rel="external">repositório público no github</a></p> <!--target"blank" é para que abra em outra aba e target"self" é para abrir na mesma aba--> 
+    <p>Usamos a tag &lt;a&gt; para envelopar palavras ou frases que você queira acoplar link. Utilizando os parametros "target _blank" e "rel external" permite que o link se abra em uma nova janela.</p>
+    <h1>Usando links internos</h1>
+    <p>Antes de criar um link interno, precisamos ter outras páginas, pois ele se refere a uma pagina propria. Para criar outra, só fazer um novo arquivo .html dentro da mesma pasta. </p>
+    <p>Acesse a <a href="pag002.html" rel="next">página dois</a></p>  <!--rel"next" e rel"previous" é só para indicar no código que a pagina é a seguinte ou anterior-->
+    <!--pra voltar muitas paginas usamos ../-->
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="Transwell-permeable-supports-guide.pdf" type="application/pdf" download="Transwell-permeable-supports-guide">Baixar esse pdf</a></li>
+    </ul> <!-- type"#" definimos o tipo do arquivo a ser baixado e download"#" é o nome do arquivo a ser baixado, dessa forma o dispositivo realiza o download, caso contrario ele só abre o pdf num navegador.-->
+</body>
+</html>
