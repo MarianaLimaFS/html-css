@@ -6,6 +6,71 @@
     <title>Formulários</title>
 </head>
 <body>
+    <h1>Primeiro formulário</h1>
+    <form action="cadastro.js" method="post"> <!--n vai achar pq n tem nada para enviar-->
+        <fieldset>
+            <legend>Dados cadastrais</legend>
+            <p>
+                <label for="iemail">Endereço de email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel">
+            </p>
+            <p><label for="iusuario">Usuario:</label>
+                 <input type="text" name="usuario" id="iusuario" required size="10" placeholder="nome do usuário"></p>
+            <p>
+                <label for="idata">Data de nascimento</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="imasc"><input type="radio" name="sexo" id="imasc">Masculino</label>
+                <label for="ifem"><input type="radio" name="sexo" id="ifem">Feminino
+            </p>
+            <!--<p>
+                <label for="imes">Mês e ano de nascimento</label>
+                <input type="month" name="mes" id="imes">
+            </p>-->
+            <p><label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required placeholder="minimo 8 caracteres"></p>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espirito Santo</option>
+                    </optgroup>
+                </select>
+            <p>
+                <label for="profissao">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="adm">Administração</option>
+                    <option value="dev">Desenvolvedor</option>
+                </datalist>
+            
+            </p>    
+            </p>    
+        </fieldset>
+        <fieldset>
+            <legend>Animais de estimação</legend>
+            <p><label for="igato"><input type="checkbox" name="gato" id="igato">Gato</label>
+            <label for="icachorro"><input type="checkbox" name="Cachorro" id="icachorro">Cachorro</label>
+            <label for="ioutros"><input type="checkbox" name="outros" id="ioutros">Outros</label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+
+        <p><input type="submit" value="enviar">
+        <input type="reset" value="limpar"  ></p>
+    </form>
     
 </body>
 </html>
